@@ -1,0 +1,118 @@
+body {
+    background-image: linear-gradient(to left bottom, #280b48, #2b1250, #2e1958, #301f61, #322669, #362b6e, #3a3073, #3e3578, #44397b, #4a3e7e, #4f4281, #554784);
+}
+
+div {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 5em;
+    width: 6em;
+    text-align: center;
+    font-family: "omnes-narrow", sans-serif;
+    font-weight: 700;
+    background: #CA4246;
+    background-color: #CA4246;
+    background: repeating-radial-gradient(
+      #ab1f24 16.666%, 
+      #f5964d 33.333%, 
+      #f1b743 33.666%, 
+      #90b711 33.666%, 
+      #3b6dd9 66.666%, 
+      #b827a5 83.333%);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    background-size: 57%;
+    background-repeat: repeat;
+
+    animation: rainbow-text-animation-rev 0.5s ease forwards;
+    cursor: pointer;
+    margin-top: 2em;
+}
+
+
+.rainbow-text:hover {
+    animation: rainbow-text-animation 0.5s ease forwards;
+}
+
+@keyframes rainbow-text-animation {
+    0% {
+      background-size: 57%;
+      background-position: 0 0;
+    }
+    20% {
+      background-size: 57%;
+      background-position: 0 1em;
+    }
+    100% {
+      background-size: 300%;
+      background-position: -9em 1em;
+    }
+  }
+
+  @keyframes rainbow-text-animation-rev {
+    0% {
+      background-size: 300%;
+      background-position: -9em 1em;
+    }
+    20% {
+      background-size: 57%;
+      background-position: 0 1em;
+    }
+    100% {
+      background-size: 57%;
+      background-position: 0 0;
+    }
+  }
+
+
+  button {
+    background-color: transparent;
+    border: solid 1px #3b6dd9;
+    padding: 1.5em;
+    border-radius: 20px;
+    color: #9eb3e0;
+    font-family:'Basis Grotesque Pro Mono', sans-serif;
+    text-transform: uppercase;
+    font-size: 1rem;
+    box-shadow: 1px 3px 5px#1c192b;
+    margin-top: 10px;
+  }
+
+  button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    color: #ffffff;
+    background-color:#b827a5;
+  }
+
+
+  p {
+    color: #9eb3e0;
+    font-family: Verdana, sans-serif;
+    font-size: 1rem;
+    margin-top: 5em;
+  }
+
+  #your-score {
+    padding: 1em;
+    margin-bottom: 2em;
+    border-radius: 20px;
+    background-color: transparent;
+    color:#9eb3e0;
+    border: solid 1px #3b6dd9;
+ }
+
+  input::placeholder{
+    color: #3b6dd9;
+  }
+
+  
+
+
